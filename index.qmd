@@ -86,7 +86,7 @@ GGTACGATCGATCGATGCTAGCTAGCTAGCTAGGCTAGCTAGCTAGCTAGC
 metaquast.py megahit_out/final.contigs.fa -o metaquast_out -t 8
 ```
 
-(MetaQUAST es la versión de QUAST orientada a metagenomas). (\[Oxford Academic\]\[3\], \[quast.sourceforge.net\]\[4\])
+(MetaQUAST es la versión de QUAST orientada a metagenomas).
 
 **`head -n 5 metaquast_out/report.tsv`**
 
@@ -155,7 +155,7 @@ SRR1986202_2    147 contig_2    147 42  90M =   0   0   ACTG... IIII...
 jgi_summarize_bam_contig_depths --outputDepth mapping_out/depth.txt mapping_out/sample.sorted.bam
 ```
 
-(Este script resume la profundidad media por contig y la escribe en un formato que usa MetaBAT2). (\[gensoft.pasteur.fr\]\[6\], \[Laura Dijkhuizen\]\[7\])
+(Este script resume la profundidad media por contig y la escribe en un formato que usa MetaBAT2).
 
 **`head -n 6 mapping_out/depth.txt`**
 
@@ -187,7 +187,7 @@ contig_4    12.34
 metabat2 -i megahit_out/final.contigs.fa -a mapping_out/depth.txt -o metabat_bins/bin -t 8
 ```
 
-(Generará `metabat_bins/bin.1.fa`, `bin.2.fa`, ...). (\[gensoft.pasteur.fr\]\[6\])
+(Generará `metabat_bins/bin.1.fa`, `bin.2.fa`, ...).
 
 **`head -n 6 metabat_bins/bin.1.fa`**
 
@@ -200,15 +200,15 @@ GGCATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGA
 
 ------------------------------------------------------------------------
 
-Evaluación de calidad de MAGs con CheckM (recomendado)
+### **Evaluación de calidad de MAGs con CheckM (recomendado)**
 
-Input
+**Input**
 
-Directorio con bins metabat_bins/ (cada \*.fa).
+-   Directorio con bins `metabat_bins/ (cada *.fa)`.
 
-Output
+**Output**
 
-checkm_out/ con lineage.ms y checkm.report (tabla con completeness, contamination, strain-heterogeneity).
+-   `checkm_out/` con `lineage.ms` y `checkm.report` (tabla con completeness, contamination, strain-heterogeneity).
 
 Comando
 
@@ -241,7 +241,7 @@ bin.3   88.7    2.1 0.0
 gtdbtk classify_wf --genome_dir metabat_bins --out_dir gtdbtk_out --extension fa --cpus 8
 ```
 
-(GTDB-Tk ejecuta `ani_screen`, `identify`, `align`, `classify` y produce resúmenes por genoma). (\[ecogenomics.github.io\]\[8\])
+(GTDB-Tk ejecuta `ani_screen`, `identify`, `align`, `classify` y produce resúmenes por genoma).
 
 **`head -n 6 gtdbtk_out/gtdbtk.bac120.summary.tsv`**
 
@@ -290,7 +290,7 @@ MTEYKLVVVGAG...
 **Requisitos previos**
 
 -   Base KOfam (perfiles HMM y `ko_list`) descargada desde el FTP de KEGG (p.ej. `profiles/` y `ko_list`) — la README indica descargar `profiles.tar.gz` y `ko_list.gz`.
--   `kofam_scan` (repo/exec_annotation). (\[GitHub\]\[9\], \[Genome\]\[10\])
+-   `kofam_scan` (repo/exec_annotation).
 
 **Input**
 

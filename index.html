@@ -88,7 +88,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#evaluación-del-ensamblado-con-metaquast" id="toc-evaluación-del-ensamblado-con-metaquast" class="nav-link" data-scroll-target="#evaluación-del-ensamblado-con-metaquast">2) Evaluación del ensamblado con MetaQUAST</a></li>
   <li><a href="#mapear-lecturas-al-ensamblado-bowtie2-samtools-necesario-para-coveragedepth" id="toc-mapear-lecturas-al-ensamblado-bowtie2-samtools-necesario-para-coveragedepth" class="nav-link" data-scroll-target="#mapear-lecturas-al-ensamblado-bowtie2-samtools-necesario-para-coveragedepth">3) Mapear lecturas al ensamblado (Bowtie2 + samtools) — necesario para coverage/depth</a></li>
   <li><a href="#calcular-cobertura-por-contig-jgi_summarize_bam_contig_depths-para-metabat2" id="toc-calcular-cobertura-por-contig-jgi_summarize_bam_contig_depths-para-metabat2" class="nav-link" data-scroll-target="#calcular-cobertura-por-contig-jgi_summarize_bam_contig_depths-para-metabat2">4) Calcular cobertura por contig (jgi_summarize_bam_contig_depths) — para MetaBAT2</a></li>
-  <li><a href="#binning-con-metabat2" id="toc-binning-con-metabat2" class="nav-link" data-scroll-target="#binning-con-metabat2">5) Binning con MetaBAT2</a></li>
+  <li><a href="#binning-con-metabat2" id="toc-binning-con-metabat2" class="nav-link" data-scroll-target="#binning-con-metabat2">5) Binning con MetaBAT2</a>
+  <ul class="collapse">
+  <li><a href="#evaluación-de-calidad-de-mags-con-checkm-recomendado" id="toc-evaluación-de-calidad-de-mags-con-checkm-recomendado" class="nav-link" data-scroll-target="#evaluación-de-calidad-de-mags-con-checkm-recomendado"><strong>Evaluación de calidad de MAGs con CheckM (recomendado)</strong></a></li>
+  </ul></li>
   <li><a href="#clasificación-taxonómica-de-los-mags-con-gtdb-tk" id="toc-clasificación-taxonómica-de-los-mags-con-gtdb-tk" class="nav-link" data-scroll-target="#clasificación-taxonómica-de-los-mags-con-gtdb-tk">6) Clasificación taxonómica de los MAGs con GTDB-Tk</a></li>
   <li><a href="#necesario-para-kofamscan-predicción-de-genesproteínas-con-prodigal-modo-metagenómico" id="toc-necesario-para-kofamscan-predicción-de-genesproteínas-con-prodigal-modo-metagenómico" class="nav-link" data-scroll-target="#necesario-para-kofamscan-predicción-de-genesproteínas-con-prodigal-modo-metagenómico">7) (Necesario para kofamSCAN) Predicción de genes/proteínas con Prodigal (modo metagenómico)</a></li>
   <li><a href="#anotación-con-kofamscan-kofam-kegg-orthology-hmms" id="toc-anotación-con-kofamscan-kofam-kegg-orthology-hmms" class="nav-link" data-scroll-target="#anotación-con-kofamscan-kofam-kegg-orthology-hmms">8) Anotación con kofamSCAN (KOfam / KEGG orthology HMMs)</a></li>
@@ -136,7 +139,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#evaluación-del-ensamblado-con-metaquast" id="toc-evaluación-del-ensamblado-con-metaquast">2) Evaluación del ensamblado con MetaQUAST</a></li>
   <li><a href="#mapear-lecturas-al-ensamblado-bowtie2-samtools-necesario-para-coveragedepth" id="toc-mapear-lecturas-al-ensamblado-bowtie2-samtools-necesario-para-coveragedepth">3) Mapear lecturas al ensamblado (Bowtie2 + samtools) — necesario para coverage/depth</a></li>
   <li><a href="#calcular-cobertura-por-contig-jgi_summarize_bam_contig_depths-para-metabat2" id="toc-calcular-cobertura-por-contig-jgi_summarize_bam_contig_depths-para-metabat2">4) Calcular cobertura por contig (jgi_summarize_bam_contig_depths) — para MetaBAT2</a></li>
-  <li><a href="#binning-con-metabat2" id="toc-binning-con-metabat2">5) Binning con MetaBAT2</a></li>
+  <li><a href="#binning-con-metabat2" id="toc-binning-con-metabat2">5) Binning con MetaBAT2</a>
+  <ul>
+  <li><a href="#evaluación-de-calidad-de-mags-con-checkm-recomendado" id="toc-evaluación-de-calidad-de-mags-con-checkm-recomendado"><strong>Evaluación de calidad de MAGs con CheckM (recomendado)</strong></a></li>
+  </ul></li>
   <li><a href="#clasificación-taxonómica-de-los-mags-con-gtdb-tk" id="toc-clasificación-taxonómica-de-los-mags-con-gtdb-tk">6) Clasificación taxonómica de los MAGs con GTDB-Tk</a></li>
   <li><a href="#necesario-para-kofamscan-predicción-de-genesproteínas-con-prodigal-modo-metagenómico" id="toc-necesario-para-kofamscan-predicción-de-genesproteínas-con-prodigal-modo-metagenómico">7) (Necesario para kofamSCAN) Predicción de genes/proteínas con Prodigal (modo metagenómico)</a></li>
   <li><a href="#anotación-con-kofamscan-kofam-kegg-orthology-hmms" id="toc-anotación-con-kofamscan-kofam-kegg-orthology-hmms">8) Anotación con kofamSCAN (KOfam / KEGG orthology HMMs)</a></li>
@@ -197,7 +203,7 @@ GGTACGATCGATCGATGCTAGCTAGCTAGCTAGGCTAGCTAGCTAGCTAGC</code></pre>
 </ul>
 <p><strong>Comando</strong></p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">metaquast.py</span> megahit_out/final.contigs.fa <span class="at">-o</span> metaquast_out <span class="at">-t</span> 8</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(MetaQUAST es la versión de QUAST orientada a metagenomas). ([Oxford Academic][3], [quast.sourceforge.net][4])</p>
+<p>(MetaQUAST es la versión de QUAST orientada a metagenomas).</p>
 <p><strong><code>head -n 5 metaquast_out/report.tsv</code></strong></p>
 <pre><code>Assembly    #contigs    Total_length    Largest_contig  N50
 megahit_out/final.contigs.fa    142 6,102,345   312345  61,230</code></pre>
@@ -248,7 +254,7 @@ SRR1986202_2    147 contig_2    147 42  90M =   0   0   ACTG... IIII...</code></
 <p><strong>Comando (ejemplo de 1 muestra)</strong></p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># jgi_summarize_bam_contig_depths está en la distribución de MetaBAT2</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">jgi_summarize_bam_contig_depths</span> <span class="at">--outputDepth</span> mapping_out/depth.txt mapping_out/sample.sorted.bam</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(Este script resume la profundidad media por contig y la escribe en un formato que usa MetaBAT2). ([gensoft.pasteur.fr][6], [Laura Dijkhuizen][7])</p>
+<p>(Este script resume la profundidad media por contig y la escribe en un formato que usa MetaBAT2).</p>
 <p><strong><code>head -n 6 mapping_out/depth.txt</code></strong></p>
 <pre><code>contig  sample1
 contig_1    150.23
@@ -271,18 +277,23 @@ contig_4    12.34</code></pre>
 </ul>
 <p><strong>Comando</strong></p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">metabat2</span> <span class="at">-i</span> megahit_out/final.contigs.fa <span class="at">-a</span> mapping_out/depth.txt <span class="at">-o</span> metabat_bins/bin <span class="at">-t</span> 8</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(Generará <code>metabat_bins/bin.1.fa</code>, <code>bin.2.fa</code>, …). ([gensoft.pasteur.fr][6])</p>
+<p>(Generará <code>metabat_bins/bin.1.fa</code>, <code>bin.2.fa</code>, …).</p>
 <p><strong><code>head -n 6 metabat_bins/bin.1.fa</code></strong></p>
 <pre><code>&gt;bin.1_contig_5 len=312345 cov=45.6
 ATGCTAGCTAGCTAGCTAGCTGATCGATCGATCGATCGATGCTAGCTAGCTAGC
 &gt;bin.1_contig_21 len=10234 cov=43.1
 GGCATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGA</code></pre>
 <hr>
-<p>Evaluación de calidad de MAGs con CheckM (recomendado)</p>
-<p>Input</p>
-<p>Directorio con bins metabat_bins/ (cada *.fa).</p>
-<p>Output</p>
-<p>checkm_out/ con lineage.ms y checkm.report (tabla con completeness, contamination, strain-heterogeneity).</p>
+<section id="evaluación-de-calidad-de-mags-con-checkm-recomendado" class="level3">
+<h3 class="anchored" data-anchor-id="evaluación-de-calidad-de-mags-con-checkm-recomendado"><strong>Evaluación de calidad de MAGs con CheckM (recomendado)</strong></h3>
+<p><strong>Input</strong></p>
+<ul>
+<li>Directorio con bins <code>metabat_bins/ (cada *.fa)</code>.</li>
+</ul>
+<p><strong>Output</strong></p>
+<ul>
+<li><code>checkm_out/</code> con <code>lineage.ms</code> y <code>checkm.report</code> (tabla con completeness, contamination, strain-heterogeneity).</li>
+</ul>
 <p>Comando</p>
 <p><code>checkm lineage_wf -t 8 -x fa metabat_bins checkm_out</code></p>
 <p>(Comando común para obtener completeness y contamination por bin).</p>
@@ -291,6 +302,7 @@ GGCATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGA</code></pre>
 bin.1   96.3    1.2 0.0
 bin.2   45.0    5.6 12.5
 bin.3   88.7    2.1 0.0</code></pre>
+</section>
 </section>
 <section id="clasificación-taxonómica-de-los-mags-con-gtdb-tk" class="level2">
 <h2 class="anchored" data-anchor-id="clasificación-taxonómica-de-los-mags-con-gtdb-tk">6) Clasificación taxonómica de los MAGs con GTDB-Tk</h2>
@@ -304,7 +316,7 @@ bin.3   88.7    2.1 0.0</code></pre>
 </ul>
 <p><strong>Comando (workflow recomendado)</strong></p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">gtdbtk</span> classify_wf <span class="at">--genome_dir</span> metabat_bins <span class="at">--out_dir</span> gtdbtk_out <span class="at">--extension</span> fa <span class="at">--cpus</span> 8</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(GTDB-Tk ejecuta <code>ani_screen</code>, <code>identify</code>, <code>align</code>, <code>classify</code> y produce resúmenes por genoma). ([ecogenomics.github.io][8])</p>
+<p>(GTDB-Tk ejecuta <code>ani_screen</code>, <code>identify</code>, <code>align</code>, <code>classify</code> y produce resúmenes por genoma).</p>
 <p><strong><code>head -n 6 gtdbtk_out/gtdbtk.bac120.summary.tsv</code></strong></p>
 <pre><code>user_genome classification  fastani_ref
 bin.1.fa    p__Proteobacteria; c__Gammaproteobacteria; o__Alteromonadales; f__Alteromonadaceae; g__Alteromonas  ref_XYZ
@@ -339,7 +351,7 @@ MTEYKLVVVGAG...</code></pre>
 <p><strong>Requisitos previos</strong></p>
 <ul>
 <li>Base KOfam (perfiles HMM y <code>ko_list</code>) descargada desde el FTP de KEGG (p.ej. <code>profiles/</code> y <code>ko_list</code>) — la README indica descargar <code>profiles.tar.gz</code> y <code>ko_list.gz</code>.</li>
-<li><code>kofam_scan</code> (repo/exec_annotation). ([GitHub][9], [Genome][10])</li>
+<li><code>kofam_scan</code> (repo/exec_annotation).</li>
 </ul>
 <p><strong>Input</strong></p>
 <ul>
