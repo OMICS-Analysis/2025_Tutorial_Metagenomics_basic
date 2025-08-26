@@ -29,7 +29,7 @@ lang: es
 
 ------------------------------------------------------------------------
 
-## 0) Preparar el workspace
+## Preparar el workspace
 
 ``` bash
 cd ~/2025_demo_metagenomics
