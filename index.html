@@ -84,18 +84,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#pipeline-metagenómica-directorios-y-archivos" id="toc-pipeline-metagenómica-directorios-y-archivos" class="nav-link active" data-scroll-target="#pipeline-metagenómica-directorios-y-archivos">Pipeline metagenómica (directorios y archivos)</a>
   <ul class="collapse">
   <li><a href="#preparar-el-workspace" id="toc-preparar-el-workspace" class="nav-link" data-scroll-target="#preparar-el-workspace">0) Preparar el workspace</a></li>
-  <li><a href="#ensamblado-con-megahit-paired-end" id="toc-ensamblado-con-megahit-paired-end" class="nav-link" data-scroll-target="#ensamblado-con-megahit-paired-end">1) Ensamblado con MEGAHIT (paired-end)</a></li>
-  <li><a href="#evaluación-del-ensamblado-con-metaquast" id="toc-evaluación-del-ensamblado-con-metaquast" class="nav-link" data-scroll-target="#evaluación-del-ensamblado-con-metaquast">2) Evaluación del ensamblado con MetaQUAST</a></li>
-  <li><a href="#mapear-lecturas-al-ensamblado-bowtie2-samtools-necesario-para-coveragedepth" id="toc-mapear-lecturas-al-ensamblado-bowtie2-samtools-necesario-para-coveragedepth" class="nav-link" data-scroll-target="#mapear-lecturas-al-ensamblado-bowtie2-samtools-necesario-para-coveragedepth">3) Mapear lecturas al ensamblado (Bowtie2 + samtools) — necesario para coverage/depth</a></li>
-  <li><a href="#calcular-cobertura-por-contig-jgi_summarize_bam_contig_depths-para-metabat2" id="toc-calcular-cobertura-por-contig-jgi_summarize_bam_contig_depths-para-metabat2" class="nav-link" data-scroll-target="#calcular-cobertura-por-contig-jgi_summarize_bam_contig_depths-para-metabat2">4) Calcular cobertura por contig (jgi_summarize_bam_contig_depths) — para MetaBAT2</a></li>
-  <li><a href="#binning-con-metabat2" id="toc-binning-con-metabat2" class="nav-link" data-scroll-target="#binning-con-metabat2">5) Binning con MetaBAT2</a>
+  <li><a href="#ensamblado-con-megahit-paired-end" id="toc-ensamblado-con-megahit-paired-end" class="nav-link" data-scroll-target="#ensamblado-con-megahit-paired-end">Ensamblado con MEGAHIT (paired-end)</a></li>
+  <li><a href="#evaluación-del-ensamblado-con-metaquast" id="toc-evaluación-del-ensamblado-con-metaquast" class="nav-link" data-scroll-target="#evaluación-del-ensamblado-con-metaquast">Evaluación del ensamblado con MetaQUAST</a></li>
+  <li><a href="#mapear-lecturas-al-ensamblado-bowtie2-samtools-necesario-para-coveragedepth" id="toc-mapear-lecturas-al-ensamblado-bowtie2-samtools-necesario-para-coveragedepth" class="nav-link" data-scroll-target="#mapear-lecturas-al-ensamblado-bowtie2-samtools-necesario-para-coveragedepth">Mapear lecturas al ensamblado (Bowtie2 + samtools) — necesario para coverage/depth</a></li>
+  <li><a href="#calcular-cobertura-por-contig-jgi_summarize_bam_contig_depths-para-metabat2" id="toc-calcular-cobertura-por-contig-jgi_summarize_bam_contig_depths-para-metabat2" class="nav-link" data-scroll-target="#calcular-cobertura-por-contig-jgi_summarize_bam_contig_depths-para-metabat2">Calcular cobertura por contig (jgi_summarize_bam_contig_depths) — para MetaBAT2</a></li>
+  <li><a href="#binning-con-metabat2" id="toc-binning-con-metabat2" class="nav-link" data-scroll-target="#binning-con-metabat2">Binning con MetaBAT2</a>
   <ul class="collapse">
   <li><a href="#evaluación-de-calidad-de-mags-con-checkm-recomendado" id="toc-evaluación-de-calidad-de-mags-con-checkm-recomendado" class="nav-link" data-scroll-target="#evaluación-de-calidad-de-mags-con-checkm-recomendado"><strong>Evaluación de calidad de MAGs con CheckM (recomendado)</strong></a></li>
   </ul></li>
-  <li><a href="#clasificación-taxonómica-de-los-mags-con-gtdb-tk" id="toc-clasificación-taxonómica-de-los-mags-con-gtdb-tk" class="nav-link" data-scroll-target="#clasificación-taxonómica-de-los-mags-con-gtdb-tk">6) Clasificación taxonómica de los MAGs con GTDB-Tk</a></li>
-  <li><a href="#necesario-para-kofamscan-predicción-de-genesproteínas-con-prodigal-modo-metagenómico" id="toc-necesario-para-kofamscan-predicción-de-genesproteínas-con-prodigal-modo-metagenómico" class="nav-link" data-scroll-target="#necesario-para-kofamscan-predicción-de-genesproteínas-con-prodigal-modo-metagenómico">7) (Necesario para kofamSCAN) Predicción de genes/proteínas con Prodigal (modo metagenómico)</a></li>
-  <li><a href="#anotación-con-kofamscan-kofam-kegg-orthology-hmms" id="toc-anotación-con-kofamscan-kofam-kegg-orthology-hmms" class="nav-link" data-scroll-target="#anotación-con-kofamscan-kofam-kegg-orthology-hmms">8) Anotación con kofamSCAN (KOfam / KEGG orthology HMMs)</a></li>
-  <li><a href="#resumen-final-y-archivos-importantes-en-2025_demo_metagenomics" id="toc-resumen-final-y-archivos-importantes-en-2025_demo_metagenomics" class="nav-link" data-scroll-target="#resumen-final-y-archivos-importantes-en-2025_demo_metagenomics">9) Resumen final y archivos importantes en <code>~/2025_demo_metagenomics</code></a></li>
+  <li><a href="#clasificación-taxonómica-de-los-mags-con-gtdb-tk" id="toc-clasificación-taxonómica-de-los-mags-con-gtdb-tk" class="nav-link" data-scroll-target="#clasificación-taxonómica-de-los-mags-con-gtdb-tk">Clasificación taxonómica de los MAGs con GTDB-Tk</a></li>
+  <li><a href="#predicción-de-genesproteínas-con-prodigal-modo-metagenómico" id="toc-predicción-de-genesproteínas-con-prodigal-modo-metagenómico" class="nav-link" data-scroll-target="#predicción-de-genesproteínas-con-prodigal-modo-metagenómico">Predicción de genes/proteínas con Prodigal (modo metagenómico)</a></li>
+  <li><a href="#anotación-con-kofamscan-kofam-kegg-orthology-hmms" id="toc-anotación-con-kofamscan-kofam-kegg-orthology-hmms" class="nav-link" data-scroll-target="#anotación-con-kofamscan-kofam-kegg-orthology-hmms">Anotación con kofamSCAN (KOfam / KEGG orthology HMMs)</a></li>
+  <li><a href="#resumen-final-y-archivos-importantes-en-2025_demo_metagenomics" id="toc-resumen-final-y-archivos-importantes-en-2025_demo_metagenomics" class="nav-link" data-scroll-target="#resumen-final-y-archivos-importantes-en-2025_demo_metagenomics">Resumen final y archivos importantes en <code>~/2025_demo_metagenomics</code></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -135,18 +135,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#pipeline-metagenómica-directorios-y-archivos" id="toc-pipeline-metagenómica-directorios-y-archivos">Pipeline metagenómica (directorios y archivos)</a>
   <ul>
   <li><a href="#preparar-el-workspace" id="toc-preparar-el-workspace">0) Preparar el workspace</a></li>
-  <li><a href="#ensamblado-con-megahit-paired-end" id="toc-ensamblado-con-megahit-paired-end">1) Ensamblado con MEGAHIT (paired-end)</a></li>
-  <li><a href="#evaluación-del-ensamblado-con-metaquast" id="toc-evaluación-del-ensamblado-con-metaquast">2) Evaluación del ensamblado con MetaQUAST</a></li>
-  <li><a href="#mapear-lecturas-al-ensamblado-bowtie2-samtools-necesario-para-coveragedepth" id="toc-mapear-lecturas-al-ensamblado-bowtie2-samtools-necesario-para-coveragedepth">3) Mapear lecturas al ensamblado (Bowtie2 + samtools) — necesario para coverage/depth</a></li>
-  <li><a href="#calcular-cobertura-por-contig-jgi_summarize_bam_contig_depths-para-metabat2" id="toc-calcular-cobertura-por-contig-jgi_summarize_bam_contig_depths-para-metabat2">4) Calcular cobertura por contig (jgi_summarize_bam_contig_depths) — para MetaBAT2</a></li>
-  <li><a href="#binning-con-metabat2" id="toc-binning-con-metabat2">5) Binning con MetaBAT2</a>
+  <li><a href="#ensamblado-con-megahit-paired-end" id="toc-ensamblado-con-megahit-paired-end">Ensamblado con MEGAHIT (paired-end)</a></li>
+  <li><a href="#evaluación-del-ensamblado-con-metaquast" id="toc-evaluación-del-ensamblado-con-metaquast">Evaluación del ensamblado con MetaQUAST</a></li>
+  <li><a href="#mapear-lecturas-al-ensamblado-bowtie2-samtools-necesario-para-coveragedepth" id="toc-mapear-lecturas-al-ensamblado-bowtie2-samtools-necesario-para-coveragedepth">Mapear lecturas al ensamblado (Bowtie2 + samtools) — necesario para coverage/depth</a></li>
+  <li><a href="#calcular-cobertura-por-contig-jgi_summarize_bam_contig_depths-para-metabat2" id="toc-calcular-cobertura-por-contig-jgi_summarize_bam_contig_depths-para-metabat2">Calcular cobertura por contig (jgi_summarize_bam_contig_depths) — para MetaBAT2</a></li>
+  <li><a href="#binning-con-metabat2" id="toc-binning-con-metabat2">Binning con MetaBAT2</a>
   <ul>
   <li><a href="#evaluación-de-calidad-de-mags-con-checkm-recomendado" id="toc-evaluación-de-calidad-de-mags-con-checkm-recomendado"><strong>Evaluación de calidad de MAGs con CheckM (recomendado)</strong></a></li>
   </ul></li>
-  <li><a href="#clasificación-taxonómica-de-los-mags-con-gtdb-tk" id="toc-clasificación-taxonómica-de-los-mags-con-gtdb-tk">6) Clasificación taxonómica de los MAGs con GTDB-Tk</a></li>
-  <li><a href="#necesario-para-kofamscan-predicción-de-genesproteínas-con-prodigal-modo-metagenómico" id="toc-necesario-para-kofamscan-predicción-de-genesproteínas-con-prodigal-modo-metagenómico">7) (Necesario para kofamSCAN) Predicción de genes/proteínas con Prodigal (modo metagenómico)</a></li>
-  <li><a href="#anotación-con-kofamscan-kofam-kegg-orthology-hmms" id="toc-anotación-con-kofamscan-kofam-kegg-orthology-hmms">8) Anotación con kofamSCAN (KOfam / KEGG orthology HMMs)</a></li>
-  <li><a href="#resumen-final-y-archivos-importantes-en-2025_demo_metagenomics" id="toc-resumen-final-y-archivos-importantes-en-2025_demo_metagenomics">9) Resumen final y archivos importantes en <code>~/2025_demo_metagenomics</code></a></li>
+  <li><a href="#clasificación-taxonómica-de-los-mags-con-gtdb-tk" id="toc-clasificación-taxonómica-de-los-mags-con-gtdb-tk">Clasificación taxonómica de los MAGs con GTDB-Tk</a></li>
+  <li><a href="#predicción-de-genesproteínas-con-prodigal-modo-metagenómico" id="toc-predicción-de-genesproteínas-con-prodigal-modo-metagenómico">Predicción de genes/proteínas con Prodigal (modo metagenómico)</a></li>
+  <li><a href="#anotación-con-kofamscan-kofam-kegg-orthology-hmms" id="toc-anotación-con-kofamscan-kofam-kegg-orthology-hmms">Anotación con kofamSCAN (KOfam / KEGG orthology HMMs)</a></li>
+  <li><a href="#resumen-final-y-archivos-importantes-en-2025_demo_metagenomics" id="toc-resumen-final-y-archivos-importantes-en-2025_demo_metagenomics">Resumen final y archivos importantes en <code>~/2025_demo_metagenomics</code></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -169,7 +169,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <hr>
 </section>
 <section id="ensamblado-con-megahit-paired-end" class="level2">
-<h2 class="anchored" data-anchor-id="ensamblado-con-megahit-paired-end">1) Ensamblado con MEGAHIT (paired-end)</h2>
+<h2 class="anchored" data-anchor-id="ensamblado-con-megahit-paired-end">Ensamblado con MEGAHIT (paired-end)</h2>
 <p><strong>Input</strong></p>
 <ul>
 <li><code>SRR1986202_1.fastq.gz</code> y <code>SRR1986202_2.fastq.gz</code></li>
@@ -187,10 +187,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ATGCTAGCTAGCTGACTGATCGATCGATGCTAGCTAGCATCGATCGATCGATCG
 &gt;contig_2 len=18421 cov=12.4
 GGTACGATCGATCGATGCTAGCTAGCTAGCTAGGCTAGCTAGCTAGCTAGC</code></pre>
-<hr>
 </section>
 <section id="evaluación-del-ensamblado-con-metaquast" class="level2">
-<h2 class="anchored" data-anchor-id="evaluación-del-ensamblado-con-metaquast">2) Evaluación del ensamblado con MetaQUAST</h2>
+<h2 class="anchored" data-anchor-id="evaluación-del-ensamblado-con-metaquast">Evaluación del ensamblado con MetaQUAST</h2>
 <p><strong>Input</strong></p>
 <ul>
 <li><code>megahit_out/final.contigs.fa</code></li>
@@ -210,7 +209,7 @@ megahit_out/final.contigs.fa    142 6,102,345   312345  61,230</code></pre>
 <hr>
 </section>
 <section id="mapear-lecturas-al-ensamblado-bowtie2-samtools-necesario-para-coveragedepth" class="level2">
-<h2 class="anchored" data-anchor-id="mapear-lecturas-al-ensamblado-bowtie2-samtools-necesario-para-coveragedepth">3) Mapear lecturas al ensamblado (Bowtie2 + samtools) — necesario para coverage/depth</h2>
+<h2 class="anchored" data-anchor-id="mapear-lecturas-al-ensamblado-bowtie2-samtools-necesario-para-coveragedepth">Mapear lecturas al ensamblado (Bowtie2 + samtools) — necesario para coverage/depth</h2>
 <p><strong>Input</strong></p>
 <ul>
 <li><code>megahit_out/final.contigs.fa</code></li>
@@ -241,7 +240,7 @@ SRR1986202_2    147 contig_2    147 42  90M =   0   0   ACTG... IIII...</code></
 <hr>
 </section>
 <section id="calcular-cobertura-por-contig-jgi_summarize_bam_contig_depths-para-metabat2" class="level2">
-<h2 class="anchored" data-anchor-id="calcular-cobertura-por-contig-jgi_summarize_bam_contig_depths-para-metabat2">4) Calcular cobertura por contig (jgi_summarize_bam_contig_depths) — para MetaBAT2</h2>
+<h2 class="anchored" data-anchor-id="calcular-cobertura-por-contig-jgi_summarize_bam_contig_depths-para-metabat2">Calcular cobertura por contig (jgi_summarize_bam_contig_depths) — para MetaBAT2</h2>
 <p><strong>Input</strong></p>
 <ul>
 <li><code>mapping_out/sample.sorted.bam</code> (BAM indexado)</li>
@@ -261,10 +260,9 @@ contig_1    150.23
 contig_2    45.78
 contig_3    0.00
 contig_4    12.34</code></pre>
-<hr>
 </section>
 <section id="binning-con-metabat2" class="level2">
-<h2 class="anchored" data-anchor-id="binning-con-metabat2">5) Binning con MetaBAT2</h2>
+<h2 class="anchored" data-anchor-id="binning-con-metabat2">Binning con MetaBAT2</h2>
 <p><strong>Input</strong></p>
 <ul>
 <li><code>megahit_out/final.contigs.fa</code></li>
@@ -305,7 +303,7 @@ bin.3   88.7    2.1 0.0</code></pre>
 </section>
 </section>
 <section id="clasificación-taxonómica-de-los-mags-con-gtdb-tk" class="level2">
-<h2 class="anchored" data-anchor-id="clasificación-taxonómica-de-los-mags-con-gtdb-tk">6) Clasificación taxonómica de los MAGs con GTDB-Tk</h2>
+<h2 class="anchored" data-anchor-id="clasificación-taxonómica-de-los-mags-con-gtdb-tk">Clasificación taxonómica de los MAGs con GTDB-Tk</h2>
 <p><strong>Input</strong></p>
 <ul>
 <li><code>metabat_bins/</code> (los <code>*.fa</code> con cada bin)</li>
@@ -323,8 +321,8 @@ bin.1.fa    p__Proteobacteria; c__Gammaproteobacteria; o__Alteromonadales; f__Al
 bin.2.fa    p__Actinobacteriota; c__Actinobacteria; o__Actinomycetales  ref_ABC</code></pre>
 <hr>
 </section>
-<section id="necesario-para-kofamscan-predicción-de-genesproteínas-con-prodigal-modo-metagenómico" class="level2">
-<h2 class="anchored" data-anchor-id="necesario-para-kofamscan-predicción-de-genesproteínas-con-prodigal-modo-metagenómico">7) (Necesario para kofamSCAN) Predicción de genes/proteínas con Prodigal (modo metagenómico)</h2>
+<section id="predicción-de-genesproteínas-con-prodigal-modo-metagenómico" class="level2">
+<h2 class="anchored" data-anchor-id="predicción-de-genesproteínas-con-prodigal-modo-metagenómico">Predicción de genes/proteínas con Prodigal (modo metagenómico)</h2>
 <p><strong>Por qué:</strong> kofamSCAN requiere <strong>secuencias de proteínas (aminoácidos)</strong> como input (FASTA de AA). Para obtenerlas a partir de contigs/bins usamos Prodigal en modo metagenómico.</p>
 <p><strong>Input</strong></p>
 <ul>
@@ -347,7 +345,7 @@ MTEYKLVVVGAG...</code></pre>
 <hr>
 </section>
 <section id="anotación-con-kofamscan-kofam-kegg-orthology-hmms" class="level2">
-<h2 class="anchored" data-anchor-id="anotación-con-kofamscan-kofam-kegg-orthology-hmms">8) Anotación con kofamSCAN (KOfam / KEGG orthology HMMs)</h2>
+<h2 class="anchored" data-anchor-id="anotación-con-kofamscan-kofam-kegg-orthology-hmms">Anotación con kofamSCAN (KOfam / KEGG orthology HMMs)</h2>
 <p><strong>Requisitos previos</strong></p>
 <ul>
 <li>Base KOfam (perfiles HMM y <code>ko_list</code>) descargada desde el FTP de KEGG (p.ej. <code>profiles/</code> y <code>ko_list</code>) — la README indica descargar <code>profiles.tar.gz</code> y <code>ko_list.gz</code>.</li>
@@ -381,7 +379,7 @@ gene_00003  K03456  85.0    90.2    2e-20   Another KO ...</code></pre>
 <hr>
 </section>
 <section id="resumen-final-y-archivos-importantes-en-2025_demo_metagenomics" class="level2">
-<h2 class="anchored" data-anchor-id="resumen-final-y-archivos-importantes-en-2025_demo_metagenomics">9) Resumen final y archivos importantes en <code>~/2025_demo_metagenomics</code></h2>
+<h2 class="anchored" data-anchor-id="resumen-final-y-archivos-importantes-en-2025_demo_metagenomics">Resumen final y archivos importantes en <code>~/2025_demo_metagenomics</code></h2>
 <pre><code>./SRR1986202_1.fastq.gz, ./SRR1986202_2.fastq.gz   # inputs raw
 ./megahit_out/final.contigs.fa                      # ensamblado MEGAHIT
 ./metaquast_out/report.html                         # evaluación ensamblado

@@ -38,7 +38,7 @@ mkdir -p megahit_out metaquast_out mapping_out metabat_bins gtdbtk_out prokka_ou
 
 ------------------------------------------------------------------------
 
-## 1) Ensamblado con MEGAHIT (paired-end)
+## Ensamblado con MEGAHIT (paired-end)
 
 **Input**
 
@@ -66,9 +66,7 @@ ATGCTAGCTAGCTGACTGATCGATCGATGCTAGCTAGCATCGATCGATCGATCG
 GGTACGATCGATCGATGCTAGCTAGCTAGCTAGGCTAGCTAGCTAGCTAGC
 ```
 
-------------------------------------------------------------------------
-
-## 2) Evaluación del ensamblado con MetaQUAST
+## Evaluación del ensamblado con MetaQUAST
 
 **Input**
 
@@ -97,7 +95,7 @@ megahit_out/final.contigs.fa    142 6,102,345   312345  61,230
 
 ------------------------------------------------------------------------
 
-## 3) Mapear lecturas al ensamblado (Bowtie2 + samtools) — necesario para coverage/depth
+## Mapear lecturas al ensamblado (Bowtie2 + samtools) — necesario para coverage/depth
 
 **Input**
 
@@ -137,7 +135,7 @@ SRR1986202_2    147 contig_2    147 42  90M =   0   0   ACTG... IIII...
 
 ------------------------------------------------------------------------
 
-## 4) Calcular cobertura por contig (jgi_summarize_bam_contig_depths) — para MetaBAT2
+## Calcular cobertura por contig (jgi_summarize_bam_contig_depths) — para MetaBAT2
 
 **Input**
 
@@ -167,9 +165,7 @@ contig_3    0.00
 contig_4    12.34
 ```
 
-------------------------------------------------------------------------
-
-## 5) Binning con MetaBAT2
+## Binning con MetaBAT2
 
 **Input**
 
@@ -225,7 +221,7 @@ bin.2   45.0    5.6 12.5
 bin.3   88.7    2.1 0.0
 ```
 
-## 6) Clasificación taxonómica de los MAGs con GTDB-Tk
+## Clasificación taxonómica de los MAGs con GTDB-Tk
 
 **Input**
 
@@ -253,7 +249,7 @@ bin.2.fa    p__Actinobacteriota; c__Actinobacteria; o__Actinomycetales  ref_ABC
 
 ------------------------------------------------------------------------
 
-## 7) (Necesario para kofamSCAN) Predicción de genes/proteínas con Prodigal (modo metagenómico)
+## Predicción de genes/proteínas con Prodigal (modo metagenómico)
 
 **Por qué:** kofamSCAN requiere **secuencias de proteínas (aminoácidos)** como input (FASTA de AA). Para obtenerlas a partir de contigs/bins usamos Prodigal en modo metagenómico.
 
@@ -285,7 +281,7 @@ MTEYKLVVVGAG...
 
 ------------------------------------------------------------------------
 
-## 8) Anotación con kofamSCAN (KOfam / KEGG orthology HMMs)
+## Anotación con kofamSCAN (KOfam / KEGG orthology HMMs)
 
 **Requisitos previos**
 
@@ -332,7 +328,7 @@ gene_00003  K03456  85.0    90.2    2e-20   Another KO ...
 
 ------------------------------------------------------------------------
 
-## 9) Resumen final y archivos importantes en `~/2025_demo_metagenomics`
+## Resumen final y archivos importantes en `~/2025_demo_metagenomics`
 
 ```         
 ./SRR1986202_1.fastq.gz, ./SRR1986202_2.fastq.gz   # inputs raw
